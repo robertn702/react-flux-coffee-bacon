@@ -1,0 +1,38 @@
+{
+  "name": "react-flux-coffee-bacon",
+  "version": "0.0.1",
+  "description": "Testing Technologies",
+  "main": "/server.js",
+  "homepage": "https://github.com/robertn702",
+  "dependencies": {
+    "baconjs": "^0.7.53",
+    "browserify": "^9.0.8",
+    "cjsxify": "^0.3.0",
+    "coffee-react": "^3.1.0",
+    "coffee-react-transform": "^3.1.0",
+    "connect-browserify": "^4.0.0",
+    "express": "^4.12.3",
+    "immutable": "^3.7.2",
+    "keymirror": "^0.1.1",
+    "node-cjsx": "^1.0.0",
+    "react": "^0.13.2",
+    "react-router": "^0.13.3",
+    "react-tools": "^0.13.2",
+    "reactify": "^1.1.0",
+    "watchify": "^3.2.0"
+  },
+  "scripts": {
+    "coffee2JS": "cjsx -o public/js -cbw public/coffee",
+    "watch": "watchify public/coffee/app.cjsx -o public/js/bundle.js -v -d",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "browserify": {
+    "transform": [
+      "cjsxify"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}

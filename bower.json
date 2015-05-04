@@ -1,0 +1,11 @@
+{
+  "name": "react-flux-coffee-bacon",
+  "version": "0.0.1",
+  "description": "Testing Technologies",
+  "main": "public/js/app.js",
+  "authors": "Robert Niimi",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}
