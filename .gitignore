@@ -1,5 +1,6 @@
 *.iml
 *.idea
 .env
+lib
 node_modules
 cloud-config
